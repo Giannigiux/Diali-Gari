@@ -1,154 +1,278 @@
 @font-face
 {
-  font-family: 'Diali';
-  src: url('fonts/BeautyDemo.ttf') format('truetype');
+    font-family: 'Diali';
+    src: url('fonts/BeautyDemo.ttf') format('truetype');
 }
 
-body
+@font-face
 {
-  background-color: #C99E67;
-  font-size: 20px;
+    font-family: 'Lemon';
+    src: url('fonts/LemonMilk.otf') format('truetype');
 }
 
-#page
-{
-  margin: auto;
-  width: 950px;
-}
-
-.jumbotron
-{
-  background-color: #A5583D;
-  color: white;
-  height: 250px;
-  padding-left: 10px;
-  margin: 0;
-}
-
-.jumbotron img
-{
-  float: left;
-  width: 160px;
-}
-
-.jumbotron h1
-{
-  font-family: 'Diali', Arial, serif;
-  font-size: 100px;
-  color: #c99e67;
-
-}
-
-.jumbotron p
-{
-  font-size: 20px;
-}
-
-.container-fluid
-{
-  padding: 0;
-}
-
-.container-fluid p
-{
-  padding: 15px;
-  background-color: #FFF8EF;
-}
-
-.container-fluid p a
-{
-  text-decoration: none;
-  color: #c99e67;
-}
-
-.container-fluid p a:hover
-{
-  color: #A5583D;
-}
-
-nav
-{
-  display: flex;
-  justify-content: space-between;
-  background-color: #EEDFCC;
-  padding: 20px;
-}
-
-.glyphicon
-{
-  font-size: 13px;
-}
-
-nav a
-{
-  color: #B95532;
-}
-
-nav li ul
+.smallscreen
 {
   display: none;
 }
 
-nav li:hover ul
+.navbar
 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: absolute;
-  font-size: 18px;
-  background-color: #EEDFCC;
+    position:fixed;
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: #A5583D;
+    border-bottom: 1px solid black;
+    z-index:1000;
+    font-family: 'Lemon', Arial, serif;
 }
 
-nav a:hover
+.navbar .container-fluid .navbar-header .navbar-brand
 {
-  text-decoration: none;
-  color: #B97D32;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .container-fluid .nav .active a
+{
+    background-color: white;
+    color: black;
+}
+
+.navbar .container-fluid .nav a
+{
+    font-size: 18px;
+    color: white;
+}
+
+.navbar .container-fluid .nav .active a
+{
+    background-color: #C99E67;
+    color: white;
+}
+
+.icone
+{
+  margin-top: 10px;
+  float: right;
+  width: 30px;
+  height: auto;
+  opacity: 0.5;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.icone:hover
+{
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.jumbotron
+{
+    background: url("pictures/header_background.jpg");
+    background-position:center center;
+    background-size: cover;
+    color: white;
+    margin-bottom: 0;
+    border-bottom: 1px solid black;
+}
+
+.jumbotron img
+{
+  width: 150px;
+  height: auto;
+  margin-bottom: -20px;
+  margin-top: 30px;
+}
+
+.jumbotron h1
+{
+    margin-right: 20px;
+    font-size: 100px;
+    font-family: 'Diali', Arial, serif;
+}
+
+.jumbotron p
+{
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.jumbotron .btn-primary
+{
+  margin-top: 10px;
+  background-color: #A5583D;
+  border: 1px solid #C99E67;
+  border: 0;
+  font-size: 20px;
+  font-family: 'Lemon', Arial, serif;
+}
+
+.jumbotron .btn-primary:hover
+{
+  background-color: #C99E67;
+  border: 0;
+}
+
+.ancre
+{
+    padding: 20px;
 }
 
 .container-fluid h1
 {
-  background-color: #A5583D;
-  color: #EEDFCC;
-  border-radius: 5px;
-  padding: 5px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 30px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: 'Lemon', Arial, serif;
 }
 
-.container-fluid h2
+.container-fluid .row
 {
-  color: #A5583D;
-  font-size: 25px;
+  padding: 8%;
+  padding-top: 50px;
+  font-size: 18px;
 }
 
-li
+.carousel-indicators .active
 {
-  display: inline-block;
-  margin-right: 20px;
+  background-color: #C99E67;
 }
 
-#main
+.carousel-inner .img-responsive
 {
+  width: 100%;
+}
+
+.carousel-inner p
+{
+  font-size: 16px;
+}
+
+#myCarousel
+{
+  border: 2px solid #A5583D;
   background-color: white;
-  padding: 20px;
+  margin: auto;
+  width: 50%;
+  font-family: 'Lemon', Arial, serif;
 }
 
-.main_img
+#myCarousel img
 {
-  margin: 20px;
-  text-align: center;
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  -moz-filter: brightness(100%);
+  -o-filter: brightness(100%);
+  -ms-filter: brightness(100%);
+  margin: auto;
 }
 
-.resize_img
+#myCarousel img:hover
 {
-  width: 800px;
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+  -moz-filter: brightness(50%);
+  -o-filter: brightness(50%);
+  -ms-filter: brightness(50%);
+  margin: auto;
+}
+
+.modal-content .modal-header
+{
+  background-color: #A5583D;
+  font-family: 'Lemon', Arial, serif;
+}
+
+.modal-content .modal-body
+{
+  color: black;
+}
+
+.modal-content .modal-body form
+{
+  margin: auto;
+  width: 70%;
+}
+
+.modal-content .modal-body form div
+{
+  margin: 10px;
+}
+
+.modal-content .modal-body form div label
+{
+    font-family: 'Lemon', Arial, serif;
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.modal-content .modal-body form div textarea
+{
+    resize: none;
+}
+
+form input, form textarea
+{
+  background-color: #FFE9CE;
+}
+
+form textarea
+{
+  height: 200px;
+  vertical-align: top;
+}
+
+form input:focus, form textarea:focus
+{
+    border: 3px solid #A5583D;
+}
+
+form .button
+{
+  padding-left: 135px;
+}
+
+form button
+{
+  font-family: 'Lemon', Arial, serif;
+  background-color: #A5583D;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.row
+{
+  background-color: #C99E67;
+}
+
+.col-sm-6 img
+{
+  width: 100%;
+  border: 1px solid #A5583D;
+}
+
+.col-sm-5 img
+{
+  margin-bottom: 20px;
+  width: 100%;
+  border: 2px solid #A5583D;
+}
+
+.col-sm-5 p
+{
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .panel-info
 {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  font-family: 'Lemon', Arial, serif;
   box-shadow: 1px 1px 12px #C99E67;
 }
 
@@ -158,189 +282,47 @@ li
   background-color: #A5583D;
   border: 1px solid #A5583D;
   border-bottom: 0px;
-  color: #EEDFCC;
+  color: white;
 }
 
 .panel-info .panel-body
 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border: 1px solid #A5583D;
+  text-align: left;
 }
 
 .panel-info .panel-body img
 {
-    width: 400px;
     border: 2px solid #A5583D;
+    margin-bottom: 10px;
 }
 
-.right_part
+.panel-info .panel-body p
 {
-  padding: 20px;
+  padding: 10px;
 }
 
-.qui
+#presentation, #senegal
 {
-  font-size: 18px;
+  background-color: white;
 }
 
-.resize_phone_qui, .resize_phone_action
+#senegal_phone
 {
-  height: 350px;
-}
-
-.fiche
-{
-  font-size: 16px;
+  display: none;
 }
 
 footer
 {
-  background-color: #EEDFCC;
-  color: #B95532;
-  padding: 15px;
+    background-color: #A5583D;
+    color: white;
+    padding: 30px;
+    font-size: 18px;
 }
 
-footer img
+footer p
 {
-  float: right;
-  height: 30px;
-  width: auto;
-}
-
-@media screen and (max-width: 415px)
-{
-        body
-        {
-          font-size: 16px;
-        }
-
-        #page
-        {
-          width: 320px;
-        }
-
-        .jumbotron
-        {
-          height: 150px;
-          padding-left: 10px;
-          margin: 0;
-        }
-
-        .jumbotron img
-        {
-          float: left;
-          width: 100px;
-        }
-
-        .jumbotron h1
-        {
-          font-family: 'Diali', Arial, serif;
-          font-size: 52px;
-          color: #c99e67;
-
-        }
-
-        .jumbotron p
-        {
-          display: none;
-        }
-
-        nav
-        {
-          display: flex;
-          flex-direction: column;
-          padding: 10px;
-          text-align: center;
-        }
-
-        .glyphicon
-        {
-          font-size: 10px;
-        }
-
-        nav li:hover ul
-        {
-          margin-left: 55px;
-          font-size: 12px;
-        }
-
-        #main
-        {
-          padding: 5px;
-        }
-
-        .main_img
-        {
-          margin: 5px;
-          text-align: center;
-        }
-
-        .resize_img
-        {
-          width: 310px;
-        }
-
-        .resize_phone
-        {
-          margin-left: -5px;
-          width: 310px;
-        }
-
-        .resize_phone_qui
-        {
-          margin-left: -5px;
-          width: 310px;
-          height: auto;
-        }
-
-        .resize_phone_action
-        {
-          width: 310px;
-          height: auto;
-        }
-
-        .container-fluid h1
-        {
-          font-size: 18px;
-        }
-
-        .container-fluid h2
-        {
-          color: #A5583D;
-          font-size: 17px;
-        }
-
-        .panel-info
-        {
-          margin-top: 10px;
-        }
-
-        .panel-info .panel-body
-        {
-          display: flex;
-          flex-direction: column;
-          border: 1px solid #A5583D;
-        }
-
-        .panel-info .panel-body img
-        {
-            width: 275px;
-        }
-
-        .right_part
-        {
-          padding: 0px;
-          padding-top: 10px;
-        }
-
-        footer
-        {
-          font-size: 16px;
-        }
-
-        .phone_hidden
-        {
-          display: none;
-        }
+    margin: 0px;
 }

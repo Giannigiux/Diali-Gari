@@ -1,0 +1,152 @@
+@media screen and (max-width: 440px)
+{
+  .jumbotron h1
+  {
+      font-size: 75px;
+  }
+
+  .container-fluid h1
+  {
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .panel-info
+  {
+    display: none;
+  }
+
+  #senegal_phone
+  {
+    display: block;
+    width: 85%;
+    margin: auto;
+    text-align: left;
+  }
+
+  #senegal_phone h2
+  {
+    font-family: 'Lemon', Arial, serif;
+    font-size: 18px;
+  }
+
+  #senegal_phone p
+  {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+    .navbar li
+    {
+      display: inline-block;
+      margin-right: -10px;
+    }
+
+    .navbar a
+    {
+      padding: -10px;
+    }
+
+    .navbar img
+    {
+      display: none;
+    }
+
+    .navbar
+    {
+      display: none;
+    }
+
+    .jumbotron img, .jumbotron .btn-primary
+    {
+      display: none;
+    }
+
+    .panel-info
+    {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .smallscreen
+    {
+      display: block;
+      text-align: left;
+    }
+
+    .smallscreen h1
+    {
+      text-align: center;
+    }
+
+    .smallscreen p
+    {
+      margin-top: 20px;
+    }
+
+    #presentation
+    {
+      display: none;
+    }
+
+    #myCarousel
+    {
+      width: 100%;
+    }
+
+    #myCarousel h3
+    {
+      font-size: 16px;
+    }
+
+    #myCarousel p
+    {
+      font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    .navbar li
+    {
+      display: inline-block;
+      margin-right: -10px;
+    }
+
+    .navbar a
+    {
+      padding: -10px;
+    }
+
+    .navbar img
+    {
+      display: none;
+    }
+
+    .panel-info
+    {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    .panel-info .panel-body
+    {
+      font-size: 16px;
+    }
+
+    .row p
+    {
+      font-size: 16px;
+    }
+
+    #senegal .col-lg-3
+    {
+      display: none;
+    }
+}
