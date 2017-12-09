@@ -6,11 +6,22 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
+          <img class="img-responsive" src="pictures/quatrieme_action.png" alt="action4" />
+          <div class="carousel-caption">
+              <h3>Association officielle</h3>
+              <p>
+                  À notre publication dans le journal officiel des associations !!
+              </p>
+          </div>
+      </div>
+
+      <div class="item">
           <img class="img-responsive" src="pictures/troisieme_action.png" alt="action3" />
           <div class="carousel-caption">
               <h3>Vente de nourriture</h3>
